@@ -1,0 +1,707 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/fb55/node-entities">entities (v1.1.1)</a>
+</h1>
+<h4>Encode &amp; decode XML/HTML entities with ease</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.entities">module entities</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decode">
+            function <span class="apidocSignatureSpan">entities.</span>decode
+            <span class="apidocSignatureSpan">(data, level)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeHTML">
+            function <span class="apidocSignatureSpan">entities.</span>decodeHTML
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeHTML4">
+            function <span class="apidocSignatureSpan">entities.</span>decodeHTML4
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeHTML4Strict">
+            function <span class="apidocSignatureSpan">entities.</span>decodeHTML4Strict
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeHTML5">
+            function <span class="apidocSignatureSpan">entities.</span>decodeHTML5
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeHTML5Strict">
+            function <span class="apidocSignatureSpan">entities.</span>decodeHTML5Strict
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeHTMLStrict">
+            function <span class="apidocSignatureSpan">entities.</span>decodeHTMLStrict
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeStrict">
+            function <span class="apidocSignatureSpan">entities.</span>decodeStrict
+            <span class="apidocSignatureSpan">(data, level)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeXML">
+            function <span class="apidocSignatureSpan">entities.</span>decodeXML
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decodeXMLStrict">
+            function <span class="apidocSignatureSpan">entities.</span>decodeXMLStrict
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encode">
+            function <span class="apidocSignatureSpan">entities.</span>encode
+            <span class="apidocSignatureSpan">(data, level)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encodeHTML">
+            function <span class="apidocSignatureSpan">entities.</span>encodeHTML
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encodeHTML4">
+            function <span class="apidocSignatureSpan">entities.</span>encodeHTML4
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encodeHTML5">
+            function <span class="apidocSignatureSpan">entities.</span>encodeHTML5
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encodeXML">
+            function <span class="apidocSignatureSpan">entities.</span>encodeXML
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.escape">
+            function <span class="apidocSignatureSpan">entities.</span>escape
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.entities.decode">module entities.decode</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decode.HTML">
+            function <span class="apidocSignatureSpan">entities.decode.</span>HTML
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decode.HTMLStrict">
+            function <span class="apidocSignatureSpan">entities.decode.</span>HTMLStrict
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.decode.XML">
+            function <span class="apidocSignatureSpan">entities.decode.</span>XML
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.entities.encode">module entities.encode</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encode.HTML">
+            function <span class="apidocSignatureSpan">entities.encode.</span>HTML
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encode.XML">
+            function <span class="apidocSignatureSpan">entities.encode.</span>XML
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.entities.encode.escape">
+            function <span class="apidocSignatureSpan">entities.encode.</span>escape
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.entities" id="apidoc.module.entities">module entities</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decode" id="apidoc.element.entities.decode">
+        function <span class="apidocSignatureSpan">entities.</span>decode
+        <span class="apidocSignatureSpan">(data, level)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decode = function (data, level){
+	return (!level || level &lt;= 0 ? decode.XML : decode.HTML)(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeHTML" id="apidoc.element.entities.decodeHTML">
+        function <span class="apidocSignatureSpan">entities.</span>decodeHTML
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeHTML = function (str){
+		return String(str).replace(re, replacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var entities = require("entities");
+//encoding
+entities.encodeXML("&amp;#38;");  // "&amp;amp;#38;"
+entities.encodeHTML("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi;"
+//decoding
+entities.decodeXML("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // "asdf &amp; Ã¿ Ã¼ '"
+entities.<span class="apidocCodeKeywordSpan">decodeHTML</span>("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // &amp;#
+x22;asdf &amp; Ã¿ Ã¼ '"
+```
+
+&lt;!-- TODO extend API --&gt;
+
+---
+
+License: BSD-like
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeHTML4" id="apidoc.element.entities.decodeHTML4">
+        function <span class="apidocSignatureSpan">entities.</span>decodeHTML4
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeHTML4 = function (str){
+		return String(str).replace(re, replacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeHTML4Strict" id="apidoc.element.entities.decodeHTML4Strict">
+        function <span class="apidocSignatureSpan">entities.</span>decodeHTML4Strict
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeHTML4Strict = function (str){
+		return String(str).replace(re, replace);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeHTML5" id="apidoc.element.entities.decodeHTML5">
+        function <span class="apidocSignatureSpan">entities.</span>decodeHTML5
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeHTML5 = function (str){
+		return String(str).replace(re, replacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeHTML5Strict" id="apidoc.element.entities.decodeHTML5Strict">
+        function <span class="apidocSignatureSpan">entities.</span>decodeHTML5Strict
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeHTML5Strict = function (str){
+		return String(str).replace(re, replace);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeHTMLStrict" id="apidoc.element.entities.decodeHTMLStrict">
+        function <span class="apidocSignatureSpan">entities.</span>decodeHTMLStrict
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeHTMLStrict = function (str){
+		return String(str).replace(re, replace);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeStrict" id="apidoc.element.entities.decodeStrict">
+        function <span class="apidocSignatureSpan">entities.</span>decodeStrict
+        <span class="apidocSignatureSpan">(data, level)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeStrict = function (data, level){
+	return (!level || level &lt;= 0 ? decode.XML : decode.HTMLStrict)(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeXML" id="apidoc.element.entities.decodeXML">
+        function <span class="apidocSignatureSpan">entities.</span>decodeXML
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeXML = function (str){
+		return String(str).replace(re, replace);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+var entities = require("entities");
+//encoding
+entities.encodeXML("&amp;#38;");  // "&amp;amp;#38;"
+entities.encodeHTML("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi;"
+//decoding
+entities.<span class="apidocCodeKeywordSpan">decodeXML</span>("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // &amp;#
+x22;asdf &amp; Ã¿ Ã¼ '"
+entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf &amp; Ã¿ Ã¼ '"
+```
+
+&lt;!-- TODO extend API --&gt;
+
+---
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decodeXMLStrict" id="apidoc.element.entities.decodeXMLStrict">
+        function <span class="apidocSignatureSpan">entities.</span>decodeXMLStrict
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decodeXMLStrict = function (str){
+		return String(str).replace(re, replace);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encode" id="apidoc.element.entities.encode">
+        function <span class="apidocSignatureSpan">entities.</span>encode
+        <span class="apidocSignatureSpan">(data, level)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encode = function (data, level){
+	return (!level || level &lt;= 0 ? encode.XML : encode.HTML)(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encodeHTML" id="apidoc.element.entities.encodeHTML">
+        function <span class="apidocSignatureSpan">entities.</span>encodeHTML
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encodeHTML = function (data){
+		return data
+				.replace(re, func)
+				.replace(re_astralSymbols, astralReplacer)
+				.replace(re_nonASCII, singleCharReplacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+###â€¦use `entities`
+
+```javascript
+var entities = require("entities");
+//encoding
+entities.encodeXML("&amp;#38;");  // "&amp;amp;#38;"
+entities.<span class="apidocCodeKeywordSpan">encodeHTML</span>("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi
+;"
+//decoding
+entities.decodeXML("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // "asdf &amp; Ã¿ Ã¼ '"
+entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf &amp; Ã¿ Ã¼ '"
+```
+
+&lt;!-- TODO extend API --&gt;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encodeHTML4" id="apidoc.element.entities.encodeHTML4">
+        function <span class="apidocSignatureSpan">entities.</span>encodeHTML4
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encodeHTML4 = function (data){
+		return data
+				.replace(re, func)
+				.replace(re_astralSymbols, astralReplacer)
+				.replace(re_nonASCII, singleCharReplacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encodeHTML5" id="apidoc.element.entities.encodeHTML5">
+        function <span class="apidocSignatureSpan">entities.</span>encodeHTML5
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encodeHTML5 = function (data){
+		return data
+				.replace(re, func)
+				.replace(re_astralSymbols, astralReplacer)
+				.replace(re_nonASCII, singleCharReplacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encodeXML" id="apidoc.element.entities.encodeXML">
+        function <span class="apidocSignatureSpan">entities.</span>encodeXML
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encodeXML = function (data){
+		return data
+				.replace(re, func)
+				.replace(re_astralSymbols, astralReplacer)
+				.replace(re_nonASCII, singleCharReplacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    npm i entities
+
+###â€¦use `entities`
+
+```javascript
+var entities = require("entities");
+//encoding
+entities.<span class="apidocCodeKeywordSpan">encodeXML</span>("&amp;#38;");  // "&amp;amp;#38;"
+entities.encodeHTML("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi;"
+//decoding
+entities.decodeXML("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // "asdf &amp; Ã¿ Ã¼ '"
+entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf &amp; Ã¿ Ã¼ '"
+```
+
+&lt;!-- TODO extend API --&gt;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.escape" id="apidoc.element.entities.escape">
+        function <span class="apidocSignatureSpan">entities.</span>escape
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escapeXML(data){
+	return data
+			.replace(re_xmlChars, singleCharReplacer)
+			.replace(re_astralSymbols, astralReplacer)
+			.replace(re_nonASCII, singleCharReplacer);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.entities.decode" id="apidoc.module.entities.decode">module entities.decode</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decode.HTML" id="apidoc.element.entities.decode.HTML">
+        function <span class="apidocSignatureSpan">entities.decode.</span>HTML
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HTML = function (str){
+		return String(str).replace(re, replacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decode.HTMLStrict" id="apidoc.element.entities.decode.HTMLStrict">
+        function <span class="apidocSignatureSpan">entities.decode.</span>HTMLStrict
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HTMLStrict = function (str){
+		return String(str).replace(re, replace);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.decode.XML" id="apidoc.element.entities.decode.XML">
+        function <span class="apidocSignatureSpan">entities.decode.</span>XML
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">XML = function (str){
+		return String(str).replace(re, replace);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.entities.encode" id="apidoc.module.entities.encode">module entities.encode</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encode.HTML" id="apidoc.element.entities.encode.HTML">
+        function <span class="apidocSignatureSpan">entities.encode.</span>HTML
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HTML = function (data){
+		return data
+				.replace(re, func)
+				.replace(re_astralSymbols, astralReplacer)
+				.replace(re_nonASCII, singleCharReplacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encode.XML" id="apidoc.element.entities.encode.XML">
+        function <span class="apidocSignatureSpan">entities.encode.</span>XML
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">XML = function (data){
+		return data
+				.replace(re, func)
+				.replace(re_astralSymbols, astralReplacer)
+				.replace(re_nonASCII, singleCharReplacer);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.entities.encode.escape" id="apidoc.element.entities.encode.escape">
+        function <span class="apidocSignatureSpan">entities.encode.</span>escape
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escapeXML(data){
+	return data
+			.replace(re_xmlChars, singleCharReplacer)
+			.replace(re_astralSymbols, astralReplacer)
+			.replace(re_nonASCII, singleCharReplacer);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
