@@ -293,24 +293,7 @@
     <li>description and source-code<pre class="apidocCodePre">decodeHTML = function (str){
 		return String(str).replace(re, replacer);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-```javascript
-var entities = require("entities");
-//encoding
-entities.encodeXML("&amp;#38;");  // "&amp;amp;#38;"
-entities.encodeHTML("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi;"
-//decoding
-entities.decodeXML("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // "asdf &amp; Ã¿ Ã¼ '"
-entities.<span class="apidocCodeKeywordSpan">decodeHTML</span>("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // &amp;#
-x22;asdf &amp; Ã¿ Ã¼ '"
-```
-
-&lt;!-- TODO extend API --&gt;
-
----
-
-License: BSD-like
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -415,23 +398,7 @@ License: BSD-like
     <li>description and source-code<pre class="apidocCodePre">decodeXML = function (str){
 		return String(str).replace(re, replace);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-```javascript
-var entities = require("entities");
-//encoding
-entities.encodeXML("&amp;#38;");  // "&amp;amp;#38;"
-entities.encodeHTML("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi;"
-//decoding
-entities.<span class="apidocCodeKeywordSpan">decodeXML</span>("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // &amp;#
-x22;asdf &amp; Ã¿ Ã¼ '"
-entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf &amp; Ã¿ Ã¼ '"
-```
-
-&lt;!-- TODO extend API --&gt;
-
----
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -479,23 +446,7 @@ entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf
 				.replace(re_astralSymbols, astralReplacer)
 				.replace(re_nonASCII, singleCharReplacer);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-###â€¦use `entities`
-
-```javascript
-var entities = require("entities");
-//encoding
-entities.encodeXML("&amp;#38;");  // "&amp;amp;#38;"
-entities.<span class="apidocCodeKeywordSpan">encodeHTML</span>("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi
-;"
-//decoding
-entities.decodeXML("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // "asdf &amp; Ã¿ Ã¼ '"
-entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf &amp; Ã¿ Ã¼ '"
-```
-
-&lt;!-- TODO extend API --&gt;
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -549,23 +500,7 @@ entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf
 				.replace(re_astralSymbols, astralReplacer)
 				.replace(re_nonASCII, singleCharReplacer);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    npm i entities
-
-###â€¦use `entities`
-
-```javascript
-var entities = require("entities");
-//encoding
-entities.<span class="apidocCodeKeywordSpan">encodeXML</span>("&amp;#38;");  // "&amp;amp;#38;"
-entities.encodeHTML("&amp;#38;"); // "&amp;amp;&amp;num;38&amp;semi;"
-//decoding
-entities.decodeXML("asdf &amp;amp; &amp;#xFF; &amp;#xFC; &amp;apos;");  // "asdf &amp; Ã¿ Ã¼ '"
-entities.decodeHTML("asdf &amp;amp; &amp;yuml; &amp;uuml; &amp;apos;"); // "asdf &amp; Ã¿ Ã¼ '"
-```
-
-&lt;!-- TODO extend API --&gt;
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 

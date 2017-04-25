@@ -300,24 +300,7 @@
     <li>description and source-code<pre class="apidocCodePre">decodeHTML = function (str){
 		return String(str).replace(re, replacer);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-```javascript
-var entities = require(&#x22;entities&#x22;);
-//encoding
-entities.encodeXML(&#x22;&#x26;#38;&#x22;);  // &#x22;&#x26;amp;#38;&#x22;
-entities.encodeHTML(&#x22;&#x26;#38;&#x22;); // &#x22;&#x26;amp;&#x26;num;38&#x26;semi;&#x22;
-//decoding
-entities.decodeXML(&#x22;asdf &#x26;amp; &#x26;#xFF; &#x26;#xFC; &#x26;apos;&#x22;);  // &#x22;asdf &#x26; ÿ ü &#x27;&#x22;
-entities.<span class="apidocCodeKeywordSpan">decodeHTML</span>(&#x22;asdf &#x26;amp; &#x26;yuml; &#x26;uuml; &#x26;apos;&#x22;); // &#
-x22;asdf &#x26; ÿ ü &#x27;&#x22;
-```
-
-&#x3c;!-- TODO extend API --&#x3e;
-
----
-
-License: BSD-like
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -422,23 +405,7 @@ License: BSD-like
     <li>description and source-code<pre class="apidocCodePre">decodeXML = function (str){
 		return String(str).replace(re, replace);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-```javascript
-var entities = require(&#x22;entities&#x22;);
-//encoding
-entities.encodeXML(&#x22;&#x26;#38;&#x22;);  // &#x22;&#x26;amp;#38;&#x22;
-entities.encodeHTML(&#x22;&#x26;#38;&#x22;); // &#x22;&#x26;amp;&#x26;num;38&#x26;semi;&#x22;
-//decoding
-entities.<span class="apidocCodeKeywordSpan">decodeXML</span>(&#x22;asdf &#x26;amp; &#x26;#xFF; &#x26;#xFC; &#x26;apos;&#x22;);  // &#
-x22;asdf &#x26; ÿ ü &#x27;&#x22;
-entities.decodeHTML(&#x22;asdf &#x26;amp; &#x26;yuml; &#x26;uuml; &#x26;apos;&#x22;); // &#x22;asdf &#x26; ÿ ü &#x27;&#x22;
-```
-
-&#x3c;!-- TODO extend API --&#x3e;
-
----
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -486,23 +453,7 @@ entities.decodeHTML(&#x22;asdf &#x26;amp; &#x26;yuml; &#x26;uuml; &#x26;apos;&#x
 				.replace(re_astralSymbols, astralReplacer)
 				.replace(re_nonASCII, singleCharReplacer);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-###…use `entities`
-
-```javascript
-var entities = require(&#x22;entities&#x22;);
-//encoding
-entities.encodeXML(&#x22;&#x26;#38;&#x22;);  // &#x22;&#x26;amp;#38;&#x22;
-entities.<span class="apidocCodeKeywordSpan">encodeHTML</span>(&#x22;&#x26;#38;&#x22;); // &#x22;&#x26;amp;&#x26;num;38&#x26;semi
-;&#x22;
-//decoding
-entities.decodeXML(&#x22;asdf &#x26;amp; &#x26;#xFF; &#x26;#xFC; &#x26;apos;&#x22;);  // &#x22;asdf &#x26; ÿ ü &#x27;&#x22;
-entities.decodeHTML(&#x22;asdf &#x26;amp; &#x26;yuml; &#x26;uuml; &#x26;apos;&#x22;); // &#x22;asdf &#x26; ÿ ü &#x27;&#x22;
-```
-
-&#x3c;!-- TODO extend API --&#x3e;
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -556,23 +507,7 @@ entities.decodeHTML(&#x22;asdf &#x26;amp; &#x26;yuml; &#x26;uuml; &#x26;apos;&#x
 				.replace(re_astralSymbols, astralReplacer)
 				.replace(re_nonASCII, singleCharReplacer);
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    npm i entities
-
-###…use `entities`
-
-```javascript
-var entities = require(&#x22;entities&#x22;);
-//encoding
-entities.<span class="apidocCodeKeywordSpan">encodeXML</span>(&#x22;&#x26;#38;&#x22;);  // &#x22;&#x26;amp;#38;&#x22;
-entities.encodeHTML(&#x22;&#x26;#38;&#x22;); // &#x22;&#x26;amp;&#x26;num;38&#x26;semi;&#x22;
-//decoding
-entities.decodeXML(&#x22;asdf &#x26;amp; &#x26;#xFF; &#x26;#xFC; &#x26;apos;&#x22;);  // &#x22;asdf &#x26; ÿ ü &#x27;&#x22;
-entities.decodeHTML(&#x22;asdf &#x26;amp; &#x26;yuml; &#x26;uuml; &#x26;apos;&#x22;); // &#x22;asdf &#x26; ÿ ü &#x27;&#x22;
-```
-
-&#x3c;!-- TODO extend API --&#x3e;
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
